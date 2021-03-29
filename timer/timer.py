@@ -22,7 +22,7 @@ for i in range (hours * 3600 + minutes * 60 + seconds):
 	seconds %= 60
 	aseconds = seconds
 
-	print("{}:{}:{}".format(hour, minutes, aseconds))
+	print("\r{}:{}:{}".format(hour, minutes, aseconds), end="", flush=True)
 	time.sleep(1)
 
 end = datetime.now()
